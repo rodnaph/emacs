@@ -21,3 +21,18 @@
 
 (set-face-attribute 'default nil :font "Monaco-12")
 
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+(setq-default tab-width 2)
+(setq-default indent-tabs-mode nil)
+(fset 'yes-or-no-p 'y-or-n-p)
+(delete-selection-mode t)
+(tool-bar-mode -1)
+(blink-cursor-mode t)
+(show-paren-mode t)
+(column-number-mode t)
+(set-fringe-style -1)
+(tooltip-mode -1)
+
+;; use UTF-8
+(prefer-coding-system 'utf-8)
