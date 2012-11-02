@@ -3,7 +3,7 @@
 (add-to-list 'load-path "~/.emacs.d/themes/solarized/")
 
 (require 'clojure-mode)
-
+(require 'php-mode)
 (require 'color-theme)
 (require 'color-theme-solarized)
 
@@ -19,4 +19,5 @@
   (add-hook 'lisp-interaction-mode-hook (lambda () (paredit-mode +1)))
   (add-hook 'scheme-mode-hook           (lambda () (paredit-mode +1)))
 
-(set-face-attribute 'default nil :font "Monaco-14")
+(set-face-attribute 'default nil :font "Monaco-12")
+
