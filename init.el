@@ -2,15 +2,18 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/themes/solarized/")
 
+(require 'package)
+(add-to-list 'package-archives 
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
 (require 'clojure-mode)
 (require 'php-mode)
 (require 'color-theme)
-(require 'color-theme-solarized)
+(require 'color-theme-molokai)
 
-(eval-after-load "color-theme"
-    '(progn
-        (color-theme-initialize)
-        (color-theme-solarized-dark)))
+(color-theme-molokai)
 
 (autoload 'paredit-mode "paredit"
       "Minor mode for pseudo-structurally editing Lisp code." t)
