@@ -15,4 +15,11 @@
 (global-set-key (kbd "M-3") 
   '(lambda () (interactive) (insert "#")))
 
+(defun kill-other-buffers ()
+    "Kill all other buffers."
+    (interactive)
+    (mapc 'kill-buffer 
+          (delq (current-buffer) 
+                (remove-if-not 'buffer-file-name (buffer-list)))))
+
 (color-theme-molokai)
