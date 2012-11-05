@@ -27,6 +27,9 @@
 (global-set-key (kbd "M-3") 
   '(lambda () (interactive) (insert "#")))
 
+; enable line numbers globally
+(global-linum-mode)
+
 ; disable line wrapping
 (setq-default truncate-lines t)
 
