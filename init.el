@@ -13,6 +13,7 @@
 (add-to-list 'package-archives 
     '("marmalade" .
       "http://marmalade-repo.org/packages/"))
+
 (package-initialize)
 
 (require 'clojure-mode)
@@ -22,14 +23,20 @@
 (require 'color-theme-solarized)
 (require 'auto-complete)
 
+; allow M-3 to display a hash
 (global-set-key (kbd "M-3") 
   '(lambda () (interactive) (insert "#")))
 
+; disable line wrapping
+(setq-default truncate-lines t)
+
+; kill all buffers apart from the current one
 (defun kill-other-buffers ()
-    "Kill all other buffers."
     (interactive)
     (mapc 'kill-buffer 
           (delq (current-buffer) 
                 (remove-if-not 'buffer-file-name (buffer-list)))))
 
+; set color theme
 (color-theme-solarized-dark)
+
