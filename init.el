@@ -54,6 +54,12 @@
           (delq (current-buffer) 
                 (remove-if-not 'buffer-file-name (buffer-list)))))
 
-; set color theme
+; disable file backups
+(setq backup-inhibited 1)
+
+; disable auto-save
+(setq auto-save-default nil)
+
+; Set color theme
 (color-theme-solarized-dark)
 
