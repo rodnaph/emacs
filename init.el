@@ -41,6 +41,9 @@
 ; use tab width of 4
 (setq tab-width 4)
 
+; set default offset to 4
+(setq c-basic-offset 4)
+
 ; always use spaces not tabs
 (setq-default indent-tabs-mode nil)
 
