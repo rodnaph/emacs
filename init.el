@@ -34,7 +34,7 @@
 (setq-default truncate-lines t)
 
 ; disable the toolbar
-(tool-bar-mode 1)
+(tool-bar-mode 0)
 
 ; kill all buffers apart from the current one
 (defun kill-other-buffers ()
