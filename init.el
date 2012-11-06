@@ -20,6 +20,7 @@
 (require 'color-theme)
 (require 'color-theme-molokai)
 (require 'color-theme-solarized)
+(require 'auto-complete)
 
 (global-set-key (kbd "M-3") 
   '(lambda () (interactive) (insert "#")))
