@@ -19,13 +19,15 @@
 (require 'clojure-mode)
 (require 'php-mode)
 (require 'color-theme)
-(require 'color-theme-molokai)
 (require 'color-theme-solarized)
 (require 'auto-complete)
 
 ; allow M-3 to display a hash
 (global-set-key (kbd "M-3") 
   '(lambda () (interactive) (insert "#")))
+
+; alias C-g to be goto-line
+(global-set-key "\M-g" 'goto-line)
 
 ; enable line numbers globally
 (global-linum-mode)
@@ -35,6 +37,12 @@
 
 ; disable the toolbar
 (tool-bar-mode 0)
+
+; use tab width of 4
+(setq tab-width 4)
+
+; always use spaces not tabs
+(setq-default indent-tabs-mode nil)
 
 ; kill all buffers apart from the current one
 (defun kill-other-buffers ()
