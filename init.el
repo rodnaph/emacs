@@ -33,6 +33,9 @@
 ; disable line wrapping
 (setq-default truncate-lines t)
 
+; disable the toolbar
+(tool-bar-mode 1)
+
 ; kill all buffers apart from the current one
 (defun kill-other-buffers ()
     (interactive)
