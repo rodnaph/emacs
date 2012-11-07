@@ -22,6 +22,9 @@
 (require 'color-theme-solarized)
 (require 'auto-complete)
 
+; window configuration
+(require 'windows)
+
 ; allow M-3 to display a hash
 (global-set-key (kbd "M-3") 
   '(lambda () (interactive) (insert "#")))
