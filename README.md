@@ -1,5 +1,4 @@
-
 Emacs Setup
 ========
 
-I'm going to trial Emacs, see how it goes...
+My Emacs config, not fully complete - you'll need to install some stuff from the Marmalade repo.
