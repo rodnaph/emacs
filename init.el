@@ -21,9 +21,13 @@
 (require 'color-theme)
 (require 'color-theme-solarized)
 (require 'auto-complete)
-
-; window configuration
 (require 'windows)
+
+; show paren matching
+(show-paren-mode 1)
+
+; highlight current sexp
+(setq show-paren-style 'parenthesis)
 
 ; allow M-3 to display a hash
 (global-set-key (kbd "M-3") 
